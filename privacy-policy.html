@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Attwork</title>
+  <meta name="robots" content="noindex" />
+
+  <style>
+    @font-face {
+      font-family: 'II Vorkurs';
+      src: url('IIVorkurs-Light.otf') format('opentype');
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'II Vorkurs';
+      src: url('IIVorkurs-Medium.otf') format('opentype');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'II Vorkurs';
+      src: url('IIVorkurs-Bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+  </style>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    :root {
+      --lime:  #dce080;
+      --green: #4ca600;
+      --black: #000000;
+      --white: #ffffff;
+      --font:  'II Vorkurs', sans-serif;
+    }
+
+    body {
+      font-family: var(--font);
+      background: var(--lime);
+      color: var(--black);
+      -webkit-font-smoothing: antialiased;
+      font-weight: 300;
+    }
+
+    /* ── Header ── */
+    .site-header {
+      padding: 32px 80px;
+      border-bottom: 1px solid rgba(0,0,0,0.12);
+    }
+    .site-header a {
+      display: inline-block;
+      text-decoration: none;
+    }
+    .site-header img {
+      height: 40px;
+      width: auto;
+      display: block;
+    }
+    @media (max-width: 600px) { .site-header { padding: 24px; } }
+
+    /* ── Content ── */
+    .content {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 80px 80px 120px;
+    }
+    @media (max-width: 900px) { .content { padding: 60px 40px 100px; } }
+    @media (max-width: 600px) { .content { padding: 48px 24px 80px; } }
+
+    /* ── Typography ── */
+    .page-title {
+      font-size: clamp(36px, 5vw, 56px);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 8px;
+    }
+
+    .last-updated {
+      font-size: 14px;
+      font-weight: 300;
+      color: rgba(0,0,0,0.5);
+      margin-bottom: 48px;
+    }
+
+    .intro {
+      font-size: clamp(16px, 1.8vw, 18px);
+      line-height: 1.65;
+      margin-bottom: 48px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid rgba(0,0,0,0.12);
+    }
+
+    .section {
+      margin-bottom: 48px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid rgba(0,0,0,0.12);
+    }
+    .section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    h2 {
+      font-size: clamp(20px, 2.5vw, 26px);
+      font-weight: 700;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 500;
+      margin: 24px 0 8px;
+    }
+
+    p {
+      font-size: clamp(15px, 1.6vw, 17px);
+      line-height: 1.7;
+      margin-bottom: 16px;
+      font-weight: 300;
+    }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      margin: 12px 0 16px 20px;
+    }
+    li {
+      font-size: clamp(15px, 1.6vw, 17px);
+      line-height: 1.7;
+      margin-bottom: 8px;
+      font-weight: 300;
+    }
+
+    strong { font-weight: 500; }
+
+    a {
+      color: var(--black);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    a:hover { color: var(--green); }
+
+    /* ── Table ── */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 20px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: clamp(14px, 1.5vw, 16px);
+    }
+    th {
+      font-weight: 500;
+      text-align: left;
+      padding: 12px 16px;
+      border-bottom: 2px solid var(--black);
+    }
+    td {
+      padding: 12px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.15);
+      vertical-align: top;
+      font-weight: 300;
+      line-height: 1.5;
+    }
+    tr:last-child td { border-bottom: none; }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--black);
+      color: var(--white);
+      text-align: center;
+      padding: 60px 40px;
+    }
+    .footer-logo {
+      height: 56px;
+      width: auto;
+      margin: 0 auto 24px;
+      display: block;
+      filter: invert(1);
+    }
+    .footer-contact {
+      font-size: 15px;
+      font-weight: 300;
+      margin-bottom: 16px;
+    }
+    .footer-contact a {
+      color: var(--white);
+      text-decoration: none;
+    }
+    .footer-copy {
+      font-size: 13px;
+      font-weight: 300;
+      opacity: 0.5;
+      margin-bottom: 8px;
+    }
+    .footer-legal {
+      font-size: 11px;
+      font-weight: 300;
+      opacity: 0.35;
+      line-height: 1.6;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      font-size: 14px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.6);
+      text-decoration: none;
+    }
+    .back-link:hover { color: var(--white); }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html">
+      <img src="attwork-wordmark.svg" alt="Attwork" />
+    </a>
+  </header>
+
+  <div class="content">
+
+    <h1 class="page-title">Privacy Policy</h1>
+    <p class="last-updated">Last updated: [DD Month YYYY]</p>
+
+    <div class="intro">
+      <p>Attwork ("we," "us," "our," "Attwork") operates the website and platform at <a href="https://www.attwork.com">www.attwork.com</a> (the "Platform"), connecting customers with tradespeople across Thailand. This Privacy Policy explains how we collect, use, share, and protect your personal data when you use the Platform, in accordance with Thailand's <strong>Personal Data Protection Act B.E. 2562 (2019) ("PDPA")</strong>.</p>
+      <p>By using the Platform, you agree to the collection and use of your data as described in this policy.</p>
+    </div>
+
+    <div class="section">
+      <h2>1. Who We Are</h2>
+      <p>Attwork is operated by <strong>Attelier Studio Co., Ltd.</strong>, registered in Thailand under company registration number <strong>0815568001173</strong>, with a registered branch address at <strong>90/2 Oceantown Moo 3, Tambon Ratsada, Amphur Mueang Phuket, 83000</strong>.</p>
+      <p><strong>Data Protection Contact:</strong> Email: <a href="mailto:hello@attwork.com">hello@attwork.com</a> · Address: 90/2 Oceantown Moo 3, Tambon Ratsada, Amphur Mueang Phuket, 83000</p>
+      <p>If you have any questions, concerns, or requests regarding your personal data, please contact us using the details above.</p>
+    </div>
+
+    <div class="section">
+      <h2>2. What Personal Data We Collect</h2>
+      <p>Depending on how you use Attwork (as a customer, a tradesperson, or a visitor), we may collect:</p>
+
+      <h3>Contact &amp; identity data</h3>
+      <ul>
+        <li>Full name, phone number, email address</li>
+        <li>National ID / passport number and copies, where required for tradesperson verification</li>
+        <li>Trade licenses, certifications, or business registration documents (for tradespeople)</li>
+      </ul>
+
+      <h3>Location data</h3>
+      <ul>
+        <li>Home or business address</li>
+        <li>General location details (to match jobs with nearby tradespeople)</li>
+      </ul>
+
+      <h3>Form submission data</h3>
+      <ul>
+        <li>Details you provide when submitting an enquiry, job request, or registration form on the Platform</li>
+        <li>Job requirements, preferences, and history of enquiries</li>
+        <li>Reviews, ratings, or feedback you provide</li>
+      </ul>
+
+      <h3>Technical data</h3>
+      <ul>
+        <li>IP address, device type, browser type, operating system</li>
+        <li>Cookies and similar tracking technologies (see Section 7)</li>
+        <li>Website usage data and log files</li>
+      </ul>
+
+      <p>We collect this data directly from you (when you fill out a form on the Platform) and, occasionally, from third parties (e.g. identity or license verification checks). We do not currently operate user log-in accounts — data is collected through submission forms.</p>
+    </div>
+
+    <div class="section">
+      <h2>3. Why We Collect Your Data (Legal Basis)</h2>
+      <p>Under the PDPA, we only process personal data where we have a valid legal basis. We rely on the following:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Purpose</th>
+              <th>Legal Basis</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Processing your enquiry or job submission</td><td>Contractual necessity</td></tr>
+            <tr><td>Matching customers with tradespeople</td><td>Contractual necessity</td></tr>
+            <tr><td>Verifying tradesperson identity, licenses, and background</td><td>Legal obligation / legitimate interest (platform trust &amp; safety)</td></tr>
+            <tr><td>Customer support</td><td>Contractual necessity</td></tr>
+            <tr><td>Sending updates related to your enquiry or submission</td><td>Contractual necessity</td></tr>
+            <tr><td>Marketing communications</td><td>Consent (you may opt out at any time)</td></tr>
+            <tr><td>Fraud prevention and platform security</td><td>Legitimate interest</td></tr>
+            <tr><td>Improving the Platform (analytics)</td><td>Legitimate interest / consent (for non-essential cookies)</td></tr>
+            <tr><td>Complying with Thai law (e.g. tax, regulatory requests)</td><td>Legal obligation</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Where we rely on your consent (e.g. marketing), you may withdraw it at any time without affecting the lawfulness of processing carried out before withdrawal.</p>
+    </div>
+
+    <div class="section">
+      <h2>4. How We Use Your Data</h2>
+      <p>We use the personal data described above to:</p>
+      <ul>
+        <li>Process and respond to your form submissions and enquiries</li>
+        <li>Match customers with suitable tradespeople based on trade, location, and availability</li>
+        <li>Verify tradesperson credentials and reduce fraud</li>
+        <li>Respond to customer support requests</li>
+        <li>Send updates related to your enquiry, job request, or submission</li>
+        <li>Send marketing communications, only if you have opted in</li>
+        <li>Analyze and improve Platform performance and user experience</li>
+        <li>Comply with legal and regulatory obligations in Thailand</li>
+      </ul>
+      <p>We do <strong>not</strong> sell your personal data to third parties for their own marketing purposes.</p>
+    </div>
+
+    <div class="section">
+      <h2>5. Who We Share Your Data With</h2>
+      <p>We may share your personal data with:</p>
+      <ul>
+        <li><strong>Other users of the Platform</strong> — e.g. a tradesperson may see a customer's job details and contact information necessary to complete a job; a customer may see a tradesperson's details and verification status.</li>
+        <li><strong>Identity verification providers</strong> — to verify tradesperson identity and credentials, where applicable.</li>
+        <li><strong>Data storage and productivity tools</strong> — such as Google Sheets/Google Workspace, which we use to record and manage form submissions.</li>
+        <li><strong>Website hosting and IT service providers</strong> — to host and secure the Platform.</li>
+        <li><strong>Analytics and communication providers</strong> — should we introduce tools such as website analytics or email/SMS delivery services in the future.</li>
+        <li><strong>Government or regulatory authorities</strong> — where required by Thai law, court order, or to protect the rights, safety, or property of Attwork, our users, or the public.</li>
+        <li><strong>Professional advisors</strong> — such as lawyers or auditors, where necessary.</li>
+      </ul>
+      <p>All third parties who process data on our behalf are required to protect it in line with this Privacy Policy and applicable law.</p>
+
+      <h3>Cross-Border Data Transfers</h3>
+      <p>Some of the tools we use to manage submitted data — for example, Google Sheets/Google Workspace — may store or process data on servers located outside Thailand. Where this occurs, we ensure the receiving country provides an adequate level of data protection, or we put appropriate safeguards in place, as required under the PDPA.</p>
+    </div>
+
+    <div class="section">
+      <h2>6. How Long We Keep Your Data</h2>
+      <p>We retain personal data only for as long as necessary to:</p>
+      <ul>
+        <li>Fulfil the purposes described in this policy,</li>
+        <li>Meet legal, accounting, or regulatory requirements, and</li>
+        <li>Resolve disputes and enforce our agreements.</li>
+      </ul>
+      <p>Retention periods:</p>
+      <ul>
+        <li><strong>General submission/contact data:</strong> for as long as you are an active customer or contractor engaging with Attwork, plus 3 years after that relationship ends</li>
+        <li><strong>Identity verification documents:</strong> for as long as the contractor or customer is actively working with us</li>
+      </ul>
+      <p>After these periods, data is securely deleted or anonymized.</p>
+    </div>
+
+    <div class="section">
+      <h2>7. Cookies and Tracking Technologies</h2>
+      <p>We do not currently use tracking or analytics cookies on the Platform. We may introduce cookies and similar technologies in the future — for example, to keep the Platform functioning correctly, understand how the Platform is used (analytics), or, where you consent, deliver relevant marketing.</p>
+      <p>If we introduce such tools, you will be able to manage or disable non-essential cookies through your browser settings or a cookie consent banner on the site. Disabling some cookies may affect Platform functionality. This section will be updated accordingly if and when cookies are introduced.</p>
+    </div>
+
+    <div class="section">
+      <h2>8. Data Security</h2>
+      <p>We implement reasonable technical and organizational measures to protect your personal data, including:</p>
+      <ul>
+        <li>Restricting access to personal data to those who need it</li>
+        <li>Secure storage of submitted data</li>
+        <li>Regular review of our data handling practices</li>
+      </ul>
+      <p>However, no method of transmission or storage is 100% secure, and we cannot guarantee absolute security.</p>
+    </div>
+
+    <div class="section">
+      <h2>9. Your Rights Under the PDPA</h2>
+      <p>As a data subject under Thai law, you have the right to:</p>
+      <ul>
+        <li><strong>Access</strong> the personal data we hold about you</li>
+        <li><strong>Correct</strong> inaccurate or incomplete data</li>
+        <li><strong>Delete</strong> or anonymize your data, in certain circumstances</li>
+        <li><strong>Withdraw consent</strong> at any time (where processing is based on consent)</li>
+        <li><strong>Object</strong> to certain processing, including for direct marketing</li>
+        <li><strong>Restrict</strong> processing in certain circumstances</li>
+        <li><strong>Data portability</strong> — request your data in a structured, commonly used format</li>
+        <li><strong>Lodge a complaint</strong> with the Office of the Personal Data Protection Committee (PDPC) of Thailand if you believe your rights have been violated</li>
+      </ul>
+      <p>To exercise any of these rights, contact us at <a href="mailto:hello@attwork.com">hello@attwork.com</a>. We will respond within the timeframe required by the PDPA.</p>
+    </div>
+
+    <div class="section">
+      <h2>10. Children's Data</h2>
+      <p>The Platform is not intended for individuals under the age of 20, in line with the definition of a minor under Thailand's PDPA. We do not knowingly collect personal data from minors without appropriate parental or guardian consent. If we become aware that we have collected data from a minor without proper consent, we will take steps to delete it.</p>
+    </div>
+
+    <div class="section">
+      <h2>11. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. We will notify you of material changes via the Platform or email, and update the "Last updated" date at the top of this page.</p>
+    </div>
+
+    <div class="section">
+      <h2>12. Contact Us</h2>
+      <p>If you have questions about this Privacy Policy or how we handle your personal data, please contact:</p>
+      <p><strong>Attelier Studio Co., Ltd.</strong><br>
+      Email: <a href="mailto:hello@attwork.com">hello@attwork.com</a><br>
+      Address: 90/2 Oceantown Moo 3, Tambon Ratsada, Amphur Mueang Phuket, 83000</p>
+      <p>You may also contact the <strong>Office of the Personal Data Protection Committee (PDPC), Thailand</strong> for independent guidance or to file a complaint.</p>
+    </div>
+
+  </div>
+
+  <footer>
+    <a href="index.html" class="back-link">← Back to attwork.com</a>
+    <img class="footer-logo" src="attwork-wordmark-tag.svg" alt="Attwork — Thailand's most trusted traders. Together." />
+    <p class="footer-contact">
+      <a href="mailto:request@attwork.com">request@attwork.com</a>
+      &nbsp;&nbsp;·&nbsp;&nbsp;
+      attwork.com
+    </p>
+    <p class="footer-copy">© 2026 Attwork. All rights reserved.</p>
+    <p class="footer-legal">Attwork is part of Attelier Studio Co. Ltd. 334 Moo 4 Taambon Dinudom, Amphora, Lamthap, Krabi Thailand CRN: 0815568001173</p>
+  </footer>
+
+</body>
+</html>
