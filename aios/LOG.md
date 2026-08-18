@@ -7,6 +7,9 @@ Newest first. Append only — never rewrite an entry. A correction is a new entr
 
 ---
 
+## 2026-08-18 — Logo file renamed: `g tag reen logotype.svg` → `green logotype tag.svg`
+**Change.** A scrambled filename from an earlier rename, fixed by the owner. Checked before committing: neither name is referenced by `index.html` or `privacy-policy.html`, so nothing on the live site depends on it.
+
 ## 2026-08-18 — Profile `build` approved
 **Status:** APPROVED
 **Decision:** This repo runs at profile `build`. Settled.
