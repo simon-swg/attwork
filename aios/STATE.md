@@ -1,6 +1,6 @@
 <!-- GENERATED — do not edit. Edits are overwritten at next close. -->
-Generated 2026-08-18 13:20 +0000 · HEAD 26a8464 · branch main · host claude · generator v2.0
-STALENESS RULE: if `git rev-parse HEAD` ≠ 26a8464, or the tree is dirty, this file is HISTORY. Regenerate before acting on it.
+Generated 2026-08-18 13:25 +0000 · HEAD d574c9d · branch main · host claude · generator v2.0
+STALENESS RULE: if `git rev-parse HEAD` ≠ d574c9d, or the tree is dirty, this file is HISTORY. Regenerate before acting on it.
 
 ## 1 · Identity
 <sub>CLAUDE.md, the five human lines — the only human input in this file</sub>
@@ -14,16 +14,16 @@ STALENESS RULE: if `git rev-parse HEAD` ≠ 26a8464, or the tree is dirty, this 
 ## 2 · Head
 <sub>git rev-parse HEAD · git log -1 · git rev-list --left-right --count @{u}...HEAD</sub>
 
-> **As of `26a8464`.** The close commits this file after generating it, so the counts below are one commit old the moment they land. Re-run `aios-state` for current numbers.
+> **As of `d574c9d`.** The close commits this file after generating it, so the counts below are one commit old the moment they land. Re-run `aios-state` for current numbers.
 
-- **main @ 26a8464** — Correct canon: the deliberate tilt is on the a, not the ant; confirm visibility public
-- Committed 2026-08-18 13:20 by simon-swg
-- Upstream: origin/main · **4 ahead**, 0 behind
+- **main @ d574c9d** — Approve profile build
+- Committed 2026-08-18 13:25 by simon-swg
+- Upstream: origin/main · **1 ahead**, 0 behind
 
 ## 3 · Working tree
 <sub>git status --porcelain + a filesystem diff against git ls-files</sub>
 
-> **As of `26a8464`, before this file was committed.** `aios/STATE.md` and `aios/CLOSING` appear here for that reason and are not real dirt.
+> **As of `d574c9d`, before this file was committed.** `aios/STATE.md` and `aios/CLOSING` appear here for that reason and are not real dirt.
 
 - Clean.
 
@@ -33,17 +33,17 @@ STALENESS RULE: if `git rev-parse HEAD` ≠ 26a8464, or the tree is dirty, this 
 - None. Every branch has an upstream.
 
 ## 5 · Since last close
-<sub>git log caeaf41..HEAD</sub>
+<sub>git log 26a8464..HEAD</sub>
 
-- `26a8464` 2026-08-18 — Correct canon: the deliberate tilt is on the a, not the ant; confirm visibility public
-- `d3d3a14` 2026-08-18 — Generate aios/STATE.md — first surface for this repo
+- `d574c9d` 2026-08-18 — Approve profile build
+- `d2d4a48` 2026-08-18 — Regenerate aios/STATE.md
 
-Close marker: 26a84645293e14e93c3951e23e8df6d9572c8a52
+Close marker: d574c9d9d4afafb3ae4de3626d5c723e0a5ceded
 
 ## 6 · Awaiting judgment
 <sub>aios/LOG.md headings + **Status:** lines — headings, dates and statuses only, never bodies</sub>
 
-- **RECOMMENDED** · 2026-08-18 (0d) — Profile is `build`, not `core`
+- Nothing awaiting judgment. Every logged decision is APPROVED or SUPERSEDED.
 
 ## 7 · Active tasks
 <sub>aios/tasks/* + git log -1 -- <file></sub>
@@ -55,8 +55,8 @@ Close marker: 26a84645293e14e93c3951e23e8df6d9572c8a52
 
 - `CLAUDE.md` — 0d old, **0d behind** the newest commit in the repo
 - `aios/tasks/TASK_001.md` — 0d old, **0d behind** the newest commit in the repo
-- `aios/STATE.md` — 0d old, **0d behind** the newest commit in the repo
 - `aios/CANON.md` — 0d old, **0d behind** the newest commit in the repo
+- `aios/STATE.md` — 0d old, **0d behind** the newest commit in the repo
 - `aios/LOG.md` — 0d old, **0d behind** the newest commit in the repo
 
 ## 9 · Cross-repo pins
