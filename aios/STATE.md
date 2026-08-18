@@ -1,6 +1,6 @@
 <!-- GENERATED — do not edit. Edits are overwritten at next close. -->
-Generated 2026-08-18 13:25 +0000 · HEAD d574c9d · branch main · host claude · generator v2.0
-STALENESS RULE: if `git rev-parse HEAD` ≠ d574c9d, or the tree is dirty, this file is HISTORY. Regenerate before acting on it.
+Generated 2026-08-18 13:31 +0000 · HEAD fd7f7b4 · branch main · host claude · generator v2.0
+STALENESS RULE: if `git rev-parse HEAD` ≠ fd7f7b4, or the tree is dirty, this file is HISTORY. Regenerate before acting on it.
 
 ## 1 · Identity
 <sub>CLAUDE.md, the five human lines — the only human input in this file</sub>
@@ -14,16 +14,16 @@ STALENESS RULE: if `git rev-parse HEAD` ≠ d574c9d, or the tree is dirty, this 
 ## 2 · Head
 <sub>git rev-parse HEAD · git log -1 · git rev-list --left-right --count @{u}...HEAD</sub>
 
-> **As of `d574c9d`.** The close commits this file after generating it, so the counts below are one commit old the moment they land. Re-run `aios-state` for current numbers.
+> **As of `fd7f7b4`.** The close commits this file after generating it, so the counts below are one commit old the moment they land. Re-run `aios-state` for current numbers.
 
-- **main @ d574c9d** — Approve profile build
-- Committed 2026-08-18 13:25 by simon-swg
+- **main @ fd7f7b4** — Rename green logotype asset and log the change
+- Committed 2026-08-18 13:31 by simon-swg
 - Upstream: origin/main · **1 ahead**, 0 behind
 
 ## 3 · Working tree
 <sub>git status --porcelain + a filesystem diff against git ls-files</sub>
 
-> **As of `d574c9d`, before this file was committed.** `aios/STATE.md` and `aios/CLOSING` appear here for that reason and are not real dirt.
+> **As of `fd7f7b4`, before this file was committed.** `aios/STATE.md` and `aios/CLOSING` appear here for that reason and are not real dirt.
 
 - Clean.
 
@@ -33,12 +33,12 @@ STALENESS RULE: if `git rev-parse HEAD` ≠ d574c9d, or the tree is dirty, this 
 - None. Every branch has an upstream.
 
 ## 5 · Since last close
-<sub>git log 26a8464..HEAD</sub>
+<sub>git log d574c9d..HEAD</sub>
 
-- `d574c9d` 2026-08-18 — Approve profile build
-- `d2d4a48` 2026-08-18 — Regenerate aios/STATE.md
+- `fd7f7b4` 2026-08-18 — Rename green logotype asset and log the change
+- `6c3f468` 2026-08-18 — Regenerate aios/STATE.md
 
-Close marker: d574c9d9d4afafb3ae4de3626d5c723e0a5ceded
+Close marker: fd7f7b41676e56ca65d828689da6a8f56436dba6
 
 ## 6 · Awaiting judgment
 <sub>aios/LOG.md headings + **Status:** lines — headings, dates and statuses only, never bodies</sub>
