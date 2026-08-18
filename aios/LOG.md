@@ -7,6 +7,12 @@ Newest first. Append only — never rewrite an entry. A correction is a new entr
 
 ---
 
+## 2026-08-18 — Profile `build` approved
+**Status:** APPROVED
+**Decision:** This repo runs at profile `build`. Settled.
+**Evidence:** Owner said so in session on 2026-08-18, signing off the RECOMMENDED entry of the same date.
+**Practical consequence:** `aios/CANON.md` stays a required file. The profile describes this repo only — it does not constrain what Attwork as a business does, and adding brand or social work does not change it.
+
 ## 2026-08-18 — Canon corrected: the tilt is on the `a`, not the ant
 **Change.** `aios/CANON.md` "What must not be touched" attributed the deliberate rotation to the ant. The owner corrected it — the ant carries the `a`, and the `a` is what is tilted. The error came straight from `ATTWORK_BRIEF.md`, whose sentence attaches the rotation to the ant character. The brief is where the ambiguity lives, not this repo.
 
@@ -26,7 +32,7 @@ Newest first. Append only — never rewrite an entry. A correction is a new entr
 **Change.** It was committed to the repo and listed in `.gitignore` at the same time, so it showed as permanently modified in `git status`. A tree that is always dirty makes `aios/STATE.md` always say "regenerate before acting", which trains the reader to ignore the staleness rule. Removed from the index with `git rm --cached`; the file stays on disk.
 
 ## 2026-08-18 — Profile is `build`, not `core`
-**Status:** RECOMMENDED
+**Status:** SUPERSEDED — signed off by the entry of 2026-08-18 approving `build`
 **Decision:** This repo installs at profile `build`, which adds `aios/CANON.md` to the core set.
 **Evidence:** It ships a deployed artefact — `index.html` and `privacy-policy.html` on Vercel, auto-deploying from `main`. It records no experimental runs, so not `research`; it runs on no schedule, so not `operator`.
 **Practical consequence:** `aios/CANON.md` is required and is now written by hand. Awaiting the owner's verdict — pass, adjust or kill.
