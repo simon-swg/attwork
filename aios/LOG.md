@@ -7,8 +7,17 @@ Newest first. Append only — never rewrite an entry. A correction is a new entr
 
 ---
 
+## 2026-08-18 — Canon corrected: the tilt is on the `a`, not the ant
+**Change.** `aios/CANON.md` "What must not be touched" attributed the deliberate rotation to the ant. The owner corrected it — the ant carries the `a`, and the `a` is what is tilted. The error came straight from `ATTWORK_BRIEF.md`, whose sentence attaches the rotation to the ant character. The brief is where the ambiguity lives, not this repo.
+
+## 2026-08-18 — `Visibility: public` confirmed by the owner
+**Status:** APPROVED
+**Decision:** This repo is public, and `CLAUDE.md` line 1 declares it. The declaration is now confirmed rather than assumed.
+**Evidence:** Owner confirmed in session on 2026-08-18 that every Silly Wizards and Attelier GitHub repo was created public.
+**Practical consequence:** Supersedes the OPEN entry of the same date. The derived-data rule (AiOS canon §6) was already binding regardless of this line, and still is — no ownership splits, registration numbers or financial figures in this repo.
+
 ## 2026-08-18 — `Visibility:` is declared `public` and needs the owner's confirmation
-**Status:** OPEN
+**Status:** SUPERSEDED — replaced by the entry of 2026-08-18 confirming `public`
 **Decision:** Undecided. `CLAUDE.md` currently declares `**Visibility:** public`.
 **Evidence:** The GitHub API is unreachable from a cloud session, so visibility can only ever be a declared line (AiOS canon §5). It was not confirmed in the install session. `public` was chosen because it is the declaration that enforces the stricter handling if wrong.
 **Practical consequence:** If the repo is private, change the one word in `CLAUDE.md` line 1 and supersede this entry. Either way the derived-data rule binds — canon §6 does not read `Visibility:`.

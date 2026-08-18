@@ -54,8 +54,9 @@ list of options and a decision to make.
   with nobody maintaining a toolchain. A framework here buys nothing and costs upkeep.
 - **The typeface and the two brand colours.** II Vorkurs; lime page, green mark. The
   rebrand was deliberately a word swap so the visual language would carry across whole.
-- **The ant's intentional rotation.** Consistent across the Attelier family. It is a
-  decision, not a drafting error, and it does not get squared up.
+- **The angle on the `a`.** The ant carries the `a`, and it is the `a` that sits at a
+  deliberate tilt — not the ant. Consistent across the Attelier family. It is a decision,
+  not a drafting error, and it does not get squared up.
 - **Private material stays out of this repo.** Ownership splits, company registration
   numbers, financial projections and registered addresses live in the brief on disk and
   never in git — write the pointer, not the payload (AiOS canon §6). This binds whatever
