@@ -126,29 +126,9 @@
     }
 
     .hero-logo {
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      width: fit-content;
+      display: block;
+      width: clamp(280px, 38%, 520px);
       margin: 0 auto 48px;
-      overflow: visible;
-    }
-    .anim-ant {
-      height: clamp(70px, 10vw, 130px);
-      width: auto;
-      animation: ant-stroll 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-    }
-    .anim-ttwork {
-      height: clamp(70px, 10vw, 130px);
-      width: auto;
-    }
-    @keyframes ant-stroll {
-      0%   { transform: translateX(-110%); opacity: 0; }
-      15%  { opacity: 1; }
-      100% { transform: translateX(0);    opacity: 1; }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      .anim-ant { animation: none; }
     }
 
     .hero-kicker {
@@ -161,17 +141,12 @@
     }
 
     .hero h1 {
-      font-size: clamp(36px, 6vw, 70px);
+      font-size: clamp(42px, 7vw, 84px);
       font-weight: 700;
-      color: var(--green);
+      color: var(--black);
       line-height: 1.1;
       letter-spacing: -0.04em;
       margin-bottom: 28px;
-    }
-
-    .hero h1 em {
-      font-style: italic;
-      font-weight: 700;
     }
 
     .hero-body {
@@ -689,11 +664,8 @@
        1. HERO
   ══════════════════════════════════════════════════════════════════════ -->
   <section class="hero">
-    <div class="hero-logo">
-      <img class="anim-ant" src="green-ant-a.svg" alt="" aria-hidden="true" />
-      <img class="anim-ttwork" src="green%20ttwork.svg" alt="attwork" />
-    </div>
-    <h1>Thailand's most trusted<br><em>traders.</em> Together.</h1>
+    <img class="hero-logo" src="attwork-wordmark.svg" alt="Attwork" />
+    <h1>Thailand's most trusted<br>traders. Together.</h1>
     <p class="hero-body">
       <strong>We connect homeowners, property developers and investors with vetted and verified tradespeople they can count on.</strong>
       Building a villa, renovating a resort, or just need a reliable specialist — Attwork gets the right person on the job.
