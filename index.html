@@ -578,49 +578,81 @@
     ══════════════════════════════════════════════════════════════════════════ */
     footer {
       background: var(--lime);
-      padding: 80px 24px 64px;
-      text-align: center;
+      padding: 72px 80px 0;
     }
+    @media (max-width: 900px) { footer { padding: 56px 40px 0; } }
+    @media (max-width: 600px) { footer { padding: 48px 24px 0; } }
 
     .footer-logo {
       display: block;
-      width: clamp(280px, 49%, 588px);
-      margin: 0 auto 48px;
+      height: clamp(28px, 3.5vw, 44px);
+      width: auto;
+      margin-bottom: 56px;
     }
 
-    .footer-contact {
-      font-size: clamp(14px, 1.4vw, 20px);
-      font-weight: 300;
-      color: var(--black);
-      margin-bottom: 10px;
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 40px;
+      padding-bottom: 64px;
+    }
+    @media (max-width: 700px) {
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 480px) {
+      .footer-grid { grid-template-columns: 1fr; }
     }
 
-    .footer-contact a {
-      color: var(--black);
-      text-decoration: none;
-      border-bottom: 1px solid rgba(0,0,0,0.4);
-      padding-bottom: 1px;
-    }
-
-    .footer-copy {
-      font-size: clamp(12px, 1vw, 15px);
-      font-weight: 300;
+    .footer-col-label {
+      display: block;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
       color: var(--black);
       opacity: 0.45;
-      margin-bottom: 32px;
+      margin-bottom: 16px;
     }
 
-    .footer-legal {
-      font-size: clamp(10px, 0.85vw, 13px);
+    .footer-col p,
+    .footer-col a {
+      display: block;
+      font-size: clamp(13px, 1.3vw, 16px);
       font-weight: 300;
       color: var(--black);
-      opacity: 0.35;
-      max-width: 640px;
-      margin: 0 auto;
+      text-decoration: none;
+      line-height: 1.7;
+    }
+
+    .footer-col a:hover { opacity: 0.6; }
+
+    .footer-col .footer-group-item {
+      margin-bottom: 4px;
+    }
+
+    .footer-col .footer-group-sub {
+      font-size: clamp(11px, 1vw, 13px);
+      opacity: 0.5;
+      display: inline;
     }
 
     .footer-bar {
-      display: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid rgba(0,0,0,0.15);
+      padding: 20px 0 24px;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .footer-copy {
+      font-size: clamp(10px, 0.9vw, 12px);
+      font-weight: 300;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--black);
+      opacity: 0.4;
     }
   </style>
 </head>
@@ -637,7 +669,6 @@
   ══════════════════════════════════════════════════════════════════════ -->
   <section class="hero">
     <img class="hero-logo" src="attwork-logo.svg" alt="Attwork — Thailand's most trusted traders. Together." />
-    <p class="hero-kicker">Managed trades · Phuket, Thailand</p>
     <h1>Thailand's most trusted<br><em>traders.</em> Together.</h1>
     <p class="hero-body">
       <strong>We connect homeowners, property developers and investors with vetted and verified tradespeople they can count on.</strong>
@@ -879,18 +910,43 @@ attwork.com" />
        6. FOOTER
   ══════════════════════════════════════════════════════════════════════ -->
   <footer>
-    <img class="footer-logo" src="attwork-wordmark-tag.svg" alt="Attwork — Thailand's most trusted traders. Together." />
-    <p class="footer-contact">
-      <a href="mailto:request@attwork.com">request@attwork.com</a>
-      &nbsp;&nbsp;·&nbsp;&nbsp;
-      attwork.com
-    </p>
-    <p class="footer-copy">© 2026 Attwork. All rights reserved. &nbsp;·&nbsp; <a href="privacy-policy.html" style="color:inherit;opacity:0.5;text-decoration:none;">Privacy Policy</a></p>
-    <p class="footer-legal">Attwork is part of Attelier Studio Co. Ltd. 334 Moo 4 Taambon Dinudom, Amphora, Lamthap, Krabi Thailand CRN: 0815568001173</p>
-    <a href="https://sillywizardsguild.com/" class="footer-swg" target="_blank" rel="noopener">
-      <img src="swg-wizard.png" alt="" />
-      Website by Silly Wizards Guild
-    </a>
+    <img class="footer-logo" src="attwork-wordmark.svg" alt="Attwork" />
+
+    <div class="footer-grid">
+
+      <div class="footer-col">
+        <span class="footer-col-label">What we do</span>
+        <p>Managed trade services for homeowners, property developers and investors in Phuket.</p>
+      </div>
+
+      <div class="footer-col">
+        <span class="footer-col-label">Contact</span>
+        <a href="mailto:request@attwork.com">request@attwork.com</a>
+        <a href="privacy-policy.html" style="margin-top:12px;opacity:0.5;">Privacy Policy</a>
+      </div>
+
+      <div class="footer-col">
+        <span class="footer-col-label">Group</span>
+        <span class="footer-group-item">
+          <a href="https://attelierstudio.com" target="_blank" rel="noopener">Attelier Studio Co. Ltd.</a>
+        </span>
+        <span class="footer-group-item">
+          <a href="https://phukethomesolutions.com" target="_blank" rel="noopener">Phuket Home Solutions <span class="footer-group-sub">villas &amp; homes</span></a>
+        </span>
+        <span class="footer-group-item" style="margin-top:4px;">
+          <a href="https://attelje.com" target="_blank" rel="noopener">Attelje <span class="footer-group-sub">brand, Sweden</span></a>
+        </span>
+      </div>
+
+    </div>
+
+    <div class="footer-bar">
+      <span class="footer-copy">© 2026 Attwork · Part of Attelier Studio Co. Ltd. · CRN 0815568001173</span>
+      <a href="https://sillywizardsguild.com/" class="footer-swg" target="_blank" rel="noopener">
+        <img src="swg-wizard.png" alt="" />
+        Website by Silly Wizards Guild
+      </a>
+    </div>
   </footer>
 
 
