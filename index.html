@@ -6,12 +6,33 @@
   <title>Attwork — Thailand's most trusted traders. Together.</title>
   <meta name="description" content="We connect homeowners, property developers and investors with vetted and verified tradespeople they can count on." />
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="ant-icon.svg" />
+  <link rel="alternate icon" href="ant-icon.svg" />
+
+  <!-- Open Graph / WhatsApp sharing -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://attwork.com/" />
+  <meta property="og:title"       content="Attwork — Thailand's most trusted traders. Together." />
+  <meta property="og:description" content="We connect homeowners, property developers and investors with vetted and verified tradespeople they can count on." />
+  <meta property="og:image"       content="https://attwork.com/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card"       content="summary_large_image" />
+
   <style>
     @font-face {
       font-family: 'II Vorkurs';
       src: url('IIVorkurs-Light.otf') format('opentype');
       font-weight: 300;
       font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'II Vorkurs';
+      src: url('IIVorkurs-LightOblique.otf') format('opentype');
+      font-weight: 300;
+      font-style: italic;
       font-display: swap;
     }
     @font-face {
@@ -23,9 +44,23 @@
     }
     @font-face {
       font-family: 'II Vorkurs';
+      src: url('IIVorkurs-MediumOblique.otf') format('opentype');
+      font-weight: 500;
+      font-style: italic;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'II Vorkurs';
       src: url('IIVorkurs-Bold.otf') format('opentype');
       font-weight: 700;
       font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'II Vorkurs';
+      src: url('IIVorkurs-BoldOblique.otf') format('opentype');
+      font-weight: 700;
+      font-style: italic;
       font-display: swap;
     }
   </style>
@@ -95,13 +130,27 @@
       margin: 0 auto 48px;
     }
 
+    .hero-kicker {
+      font-size: clamp(13px, 1.4vw, 18px);
+      font-weight: 300;
+      color: var(--black);
+      letter-spacing: 0.01em;
+      margin-bottom: 20px;
+      opacity: 0.65;
+    }
+
     .hero h1 {
       font-size: clamp(36px, 6vw, 70px);
-      font-weight: 800;
+      font-weight: 700;
       color: var(--green);
       line-height: 1.1;
-      letter-spacing: -0.05em;
+      letter-spacing: -0.04em;
       margin-bottom: 28px;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      font-weight: 700;
     }
 
     .hero-body {
@@ -377,6 +426,41 @@
       margin-top: 16px;
     }
 
+    .step-num {
+      display: block;
+      font-size: clamp(13px, 1.4vw, 18px);
+      font-weight: 300;
+      color: var(--green);
+      letter-spacing: 0.01em;
+      margin-bottom: 12px;
+      opacity: 0.75;
+    }
+
+    .section-kicker {
+      display: block;
+      font-size: clamp(13px, 1.4vw, 18px);
+      font-weight: 300;
+      letter-spacing: 0.01em;
+      margin-bottom: 16px;
+      opacity: 0.6;
+    }
+
+    /* Footer SWG credit */
+    .footer-swg {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: clamp(11px, 0.9vw, 14px);
+      font-weight: 300;
+      color: var(--black);
+      text-decoration: none;
+      opacity: 0.4;
+      margin-top: 32px;
+      transition: opacity 0.15s;
+    }
+    .footer-swg:hover { opacity: 0.7; }
+    .footer-swg img { height: 18px; width: auto; }
+
 
     /* ══════════════════════════════════════════════════════════════════════════
        4. VERIFICATION
@@ -392,12 +476,17 @@
 
     .verify h2 {
       font-size: clamp(30px, 5.5vw, 70px);
-      font-weight: 500;
+      font-weight: 700;
       color: var(--white);
       letter-spacing: -0.05em;
       line-height: 1.15;
       max-width: 820px;
       margin: 0 auto 24px;
+    }
+
+    .verify h2 em {
+      font-style: italic;
+      font-weight: 700;
     }
 
     .verify-sub {
@@ -531,12 +620,13 @@
   ══════════════════════════════════════════════════════════════════════ -->
   <section class="hero">
     <img class="hero-logo" src="attwork-logo.svg" alt="Attwork — Thailand's most trusted traders. Together." />
-    <h1>Thailand's most trusted<br>traders. Together.</h1>
+    <p class="hero-kicker">Managed trades · Phuket, Thailand</p>
+    <h1>Thailand's most trusted<br><em>traders.</em> Together.</h1>
     <p class="hero-body">
       <strong>We connect homeowners, property developers and investors with vetted and verified tradespeople they can count on.</strong>
-      Whether you're building a villa, renovating a resort, or looking for reliable specialists, Attwork is here to help Phuket build better.
+      Building a villa, renovating a resort, or just need a reliable specialist — Attwork gets the right person on the job.
     </p>
-    <a href="#request" class="hero-btn">Let's get your job done</a>
+    <a href="#request" class="hero-btn">Get your job done</a>
   </section>
 
 
@@ -643,23 +733,27 @@ attwork.com" />
   ══════════════════════════════════════════════════════════════════════ -->
   <section class="hiw">
     <img class="hiw-ant" src="ant-icon.svg" alt="" aria-hidden="true" />
+    <span class="section-kicker">Simple by design</span>
     <h2>How it works</h2>
     <p class="hiw-sub">Three steps between you and a contractor you can rely on.</p>
 
     <div class="hiw-cards">
       <div class="hiw-card">
-        <h3>1. Tell us what<br>you need</h3>
-        <p>Fill in the short form with your project details, location, and the type of trade you're looking for.<span class="step-kicker">Takes two minutes.</span></p>
+        <span class="step-num">01</span>
+        <h3>Tell us what<br>you need</h3>
+        <p>Fill in the short form with your project details, location, and the trade you need.<span class="step-kicker">Takes two minutes.</span></p>
         <img class="card-ant" src="just-ant/just-green-ant.png" alt="" />
       </div>
       <div class="hiw-card">
-        <h3>2. We come<br>to you</h3>
-        <p>An Attwork Advisor will visit the job in person to confirm the scope of work and make sure we find exactly the right person for it.<span class="step-kicker">Free of charge.</span></p>
+        <span class="step-num">02</span>
+        <h3>We come<br>to you</h3>
+        <p>An Attwork Advisor visits the job in person to confirm scope and match you with the right contractor.<span class="step-kicker">Free of charge.</span></p>
         <img class="card-ant" src="just-ant/just-green-ant.png" alt="" />
       </div>
       <div class="hiw-card">
-        <h3>3. Your job<br>gets done</h3>
-        <p>We make the introduction to a vetted, trusted contractor matched to your job. You get a quote. We get the work done.<span class="step-kicker">With complete peace of mind.</span></p>
+        <span class="step-num">03</span>
+        <h3>Your job<br>gets done</h3>
+        <p>Vetted contractor introduced. Quote issued. Work completed.<span class="step-kicker">With complete peace of mind.</span></p>
         <img class="card-ant" src="just-ant/just-green-ant.png" alt="" />
       </div>
     </div>
@@ -670,23 +764,28 @@ attwork.com" />
        4. VERIFICATION
   ══════════════════════════════════════════════════════════════════════ -->
   <section class="verify">
-    <h2>With Attwork:<br>Every contractor is vetted.<br>Every time.</h2>
+    <span class="section-kicker" style="color:rgba(255,255,255,0.5);">Every contractor. Every time.</span>
+    <h2>Vetted, verified,<br>and <em>accountable.</em></h2>
     <p class="verify-sub">Getting let down by an unqualified contractor in Phuket is common. We've made it our job to make sure that doesn't happen to you.</p>
 
     <div class="verify-grid">
       <div class="verify-cell">
+        <span class="step-num" style="color:rgba(220,224,128,0.6);">01</span>
         <h4>DBD Registered</h4>
         <p>Every business on Attwork is registered with Thailand's Department of Business Development.</p>
       </div>
       <div class="verify-cell">
+        <span class="step-num" style="color:rgba(220,224,128,0.6);">02</span>
         <h4>Licensed &amp; Qualified</h4>
         <p>We check trade licenses and qualifications before any contractor joins the network.</p>
       </div>
       <div class="verify-cell">
+        <span class="step-num" style="color:rgba(220,224,128,0.6);">03</span>
         <h4>Insured</h4>
         <p>All contractors carry appropriate insurance. If something goes wrong, you're covered.</p>
       </div>
       <div class="verify-cell">
+        <span class="step-num" style="color:rgba(220,224,128,0.6);">04</span>
         <h4>Personally Vetted</h4>
         <p>Our team has worked alongside most contractors in our network. We know who shows up and who doesn't.</p>
       </div>
@@ -771,6 +870,10 @@ attwork.com" />
     </p>
     <p class="footer-copy">© 2026 Attwork. All rights reserved. &nbsp;·&nbsp; <a href="privacy-policy.html" style="color:inherit;opacity:0.5;text-decoration:none;">Privacy Policy</a></p>
     <p class="footer-legal">Attwork is part of Attelier Studio Co. Ltd. 334 Moo 4 Taambon Dinudom, Amphora, Lamthap, Krabi Thailand CRN: 0815568001173</p>
+    <a href="https://sillywizardsguild.com/" class="footer-swg" target="_blank" rel="noopener">
+      <img src="swg-wizard.png" alt="" />
+      Website by Silly Wizards Guild
+    </a>
   </footer>
 
 
